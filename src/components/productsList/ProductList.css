@@ -1,0 +1,35 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  list-style: none;
+}
+
+.product-card {
+  width: 25%;
+  text-align: center;
+  border: 5px solid blue;
+  margin: 10px;
+  border-radius: 20px;
+  height: 22rem;
+}
+
+.list-image {
+  height: 10rem;
+}
+
+.link-product {
+  text-decoration: none;
+  background-color: rgba(24, 24, 237, 0.86);
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.link-product:hover {
+  background-color: white;
+  color: black;
+}
