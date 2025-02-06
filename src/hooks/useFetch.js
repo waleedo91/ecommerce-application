@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const useFetch = (URL) => {
   const [data, setData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -14,14 +15,16 @@ const useFetch = (URL) => {
         })
         .then((data) => {
           setData(data);
+          setIsLoading(false);
         })
         .catch((error) => {
           console.error(error.message);
+          setIsLoading(false);
         });
     }, 1000);
-  }, []);
+  }, [URL]);
 
-  return { data };
+  return { data, isLoading };
 };
 
 export default useFetch;

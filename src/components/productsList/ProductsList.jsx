@@ -1,5 +1,7 @@
+// IMPORTS
 import { Link } from "react-router-dom";
 
+// STYLE SHEETS
 import "./ProductList.css";
 
 function ProductsList({ products }) {
